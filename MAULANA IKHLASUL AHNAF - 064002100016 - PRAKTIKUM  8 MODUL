@@ -1,0 +1,15 @@
+@author: User
+NAMA:MAULANA IKHLASUL AHNAF
+NIM:064002100016
+"""
+a = int(input("masukin angka: "))
+b = int(input("mau di pangkatkan ke berapa: "))
+def pangkat(a,b):
+ 
+ if b >= 1 :
+  return a * pangkat(a, b - 1)
+ 
+ return a
+hasil = pangkat(a, b)
+
+print(f"hasil nya = {hasil}")
